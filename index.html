@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="rss/chartist.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">     
+    </head>
+    <body>
+        <div class="wrapper" id="wrapper" onload="setHeight()" style="height: 0px">
+            <div class="default border">
+                <div class="search">
+                    <h2 id="loading">Look up others</h2>
+                    <input class="border" id="search" type="text" placeholder="Search...">
+                </div>
+
+                <div class="general">
+                    <div>
+                        <p class="title">Username: </p>
+                        <p class="name" id="name">Loading...</p>
+                    </div>
+                    <div>
+                        <p class="title">Current level: </p>
+                        <p class="level" id="level">Loading...</p>
+                    </div>
+                    <div>
+                        <p class="title">Experience Points: </p>
+                        <p class="xp" id="xp">Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="default border charts" id="lineGraph"></div>
+            <div class="default border charts" id="barGraph"></div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="rss/chartist.min.js"></script>
+        <script src="rss/moment.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
