@@ -73,7 +73,7 @@ var bar = new Chartist.Bar('#barGraph', {}, {
     }
 })
 
-document.getElementById('wrapper').style.height = `${window.innerHeight - 40}px`
+document.getElementById('wrapper').style.minHeight = `${window.innerHeight - 40}px`
 $('#search').on("keypress", async (e) => {
     $('#search').removeClass("error")
     $('#loading').text('Look up others')
