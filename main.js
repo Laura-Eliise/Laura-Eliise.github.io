@@ -72,6 +72,7 @@ var bar = new Chartist.Bar('#barGraph', {}, {
         showGrid: false
     }
 })
+// $("barGraph").push(document.createElement('h4'))
 
 
 document.getElementById('wrapper').style.height = `${window.innerHeight - 40}px`
