@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "graphql": "^16.4.0",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.3"
+  }
+}
